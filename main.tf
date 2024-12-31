@@ -1,6 +1,6 @@
 # Configure the AWS provider
 provider "aws" {
-  region = "ap-south-1" # Replace with the desired AWS region NV
+  region = "ap-south-1" #Replacewiththe desired AWS region NV
 }
 
 # Create a security group
@@ -46,5 +46,5 @@ resource "aws_instance" "my_instance" {
 # Create an SSH key pair
 resource "aws_key_pair" "my_key" {
   key_name   = "my-ssh-key1"
-  public_key = file("~/.ssh/id_rsa.pub")  # Ensure you have the key already generated
+  public_key = file("/var/lib/jenkins/.ssh/id_rsa.pub")  # Ensure you have the key already generated
 }

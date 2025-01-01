@@ -20,13 +20,13 @@
 
     - name: Docker Image
       docker_image:
-          name: acharyaditiss/myproject
+          name: ponnasumanth/dev
           source: pull
 
     - name: Docker Run
       docker_container:
           name: myweb
-          image: acharyaditiss/myproject
+          image: ponnasumanth/dev
           state: started
           restart_policy: always
           published_ports:

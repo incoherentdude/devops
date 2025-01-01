@@ -25,7 +25,7 @@
 
     - name: Docker Run
       docker_container:
-          name: myweb
+          name: web
           image: ponnasumanth/dev
           state: started
           restart_policy: always
